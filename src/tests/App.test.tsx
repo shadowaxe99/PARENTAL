@@ -21,9 +21,11 @@ describe('App component tests', () => {
     const inputElement = screen.getByTestId('number-input') as HTMLInputElement;
     const visualizerElement = screen.getByTestId('number-visualizer');
 
+    // Update the test cases to reflect the new state management logic and props
+    // For example, in the test 'updates visualizer when number input changes', we need to use the new prop names and logic
     fireEvent.change(inputElement, { target: { value: '50' } });
     expect(inputElement.value).toBe('50');
-    expect(visualizerElement.textContent).toContain('50');
+    expect(visualizerElement.textContent).toContain('50 / 100'); // Updated to reflect the new state management logic
   });
 
   test('does not exceed the maximum value in visualizer', () => {
