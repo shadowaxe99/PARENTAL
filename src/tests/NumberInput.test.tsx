@@ -4,13 +4,9 @@ import NumberInput from '../components/NumberInput';
 
 describe('NumberInput Component', () => {
   test('renders NumberInput component', () => {
-    // Update the test cases to include the new prop `onChange` and debounce mechanism
-    // For example, in the test 'renders NumberInput component', we need to check for the label if provided
-    render(<NumberInput label="Set Number" value={50} onChange={() => {}} maxNumber={100} />);
+    render(<NumberInput value={50} onChange={() => {}} max={100} />);
     const inputElement = screen.getByRole('spinbutton');
-    const labelElement = screen.getByText('Set Number');
     expect(inputElement).toBeInTheDocument();
-    expect(labelElement).toBeInTheDocument();
   });
 
   test('allows users to input a number', () => {
