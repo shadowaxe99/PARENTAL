@@ -1,6 +1,6 @@
 # Elysium Innovations - Number Visualizer
 
-Elysium Innovations is proud to present a comprehensive React application that utilizes TypeScript to create interactive and user-friendly components. This application is designed to seamlessly represent any number within a specified range using a visual representation, such as a progress bar or a numerical indicator.
+Elysium Innovations proudly introduces the Number Visualizer, a sophisticated React application that leverages TypeScript to build interactive components that allow users to visualize numerical data in various forms such as progress bars and digital counters. Leveraging powerful visualization libraries and modern web technologies, the app offers a dynamic and intuitive interface for representing numbers in a user-specified range, aiding in education, data analysis, and more.
 
 ## Objective
 
@@ -54,7 +54,13 @@ This will create a `build` directory with a production build of the app.
 
 ## Testing
 
-To run the unit and integration tests, use the following command:
+To run the unit and integration tests, follow these steps:
+
+1. Ensure you have all the necessary dependencies installed by running `npm install`.
+2. To execute the test suite and view the test results, use the command `npm test`.
+3. For continuous integration environments or to run tests in watch mode, use `npm test -- --watchAll`.
+
+Please note that tests are a crucial part of the development process and any new code is expected to maintain or improve the current code coverage.
 
 ```
 npm test
@@ -62,11 +68,21 @@ npm test
 
 ## Documentation
 
-For a detailed explanation of the application's architecture, component structure, and implementation details, please refer to the `DEVELOPER_GUIDE.md` file.
+For a high-level overview of the application's architecture, the Number Visualizer is structured into modular components that encapsulate specific functionalities, making the project scalable and maintainable. The application follows a component-driven design, with React components managed by Redux for state management. Front-end routing is handled by React Router, and data visualization is powered by D3.js and other visualization libraries.
+
+For a comprehensive explanation of the application's architecture, component structure, and implementation details, please refer to the `DEVELOPER_GUIDE.md` file.
 
 ## Contributing
 
-We welcome contributions from the community. Please read the `CONTRIBUTING.md` file for guidelines on how to contribute to the project.
+We welcome contributions from the community. To contribute to the Number Visualizer project, please follow these steps:
+
+1. Check out the `issues` tab in our GitHub repository and look for open issues that interest you.
+2. If you have a suggestion or a bug to report, create a new issue and provide as much detail as possible.
+3. Fork the repository and make your changes. Be sure to follow our coding standards and write clean, maintainable code.
+4. Write or update tests as necessary to cover your changes.
+5. Submit a pull request with a clear description of your changes and reference the issue it resolves.
+
+For a detailed guide, please read the `CONTRIBUTING.md` file.
 
 ## License
 
